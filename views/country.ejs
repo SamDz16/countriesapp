@@ -1,0 +1,37 @@
+<%- include('partials/head.ejs') %> 
+<%- include('partials/navbar') %>
+
+<div class="card" style="width: 18rem; margin: 10px auto;">
+  <img style="border: 1px solid #000;" src= <%= flag %>  class="card-img-top" alt=<%= country %> >
+  <div class="card-body">
+    <h5 class="card-title"><b>- Country name: </b> <%= country %> </h5>
+    <p class="card-text"><b>- Capital: </b> <%= capital %> </p>
+    <p class="card-text"><b>- Currency: </b><%= currency %> </p>
+    <p class="card-text"><b>- Native languages: </b>
+        <ul>
+           <% for(lang of native_language) {  %>
+                <li><%= lang %> </li>
+            <% } %>
+        </ul>
+    </p>
+    <p class="card-text"><b>- Famous For: </b><%= famous_for %> </p>
+    <p class="card-text"><b>- Phone Code: </b><%= phone_code %> </p>
+    <p class="card-text"><b>- Constitutional Form: </b><%= constitutional_form %> </p>
+    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+  </div>
+</div>
+
+    <!-- <h1><%= country %> </h1>
+    <p><b>- Country name:</b> <%= country %> </p>
+    <p><b>- Capital:</b> <%= capital %> </p>
+    <p><b>- Currency:</b> <%= currency %> </p>
+    <p><b>- Native languages:</b>
+        <ul>
+           <% for(lang of native_language) {  %>
+                <li><%= lang %> </li>
+            <% } %>
+        </ul>
+    </p>
+    <p><b>- Flag:</b></p><img style="border: 1px solid #000;" src= <%= flag %>  alt= <%= country %>  > -->
+
+<%- include('partials/footer') %>

@@ -1,0 +1,42 @@
+/* Countries Page */
+#countries-page h1 {
+	text-align: center;
+}
+
+#countries-page #countries {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#countries-page .country {
+	padding: 5px 20px;
+	margin: 10px;
+	border: 1px solid #000;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: all 300ms;
+}
+
+#countries-page .country:hover {
+	background-color: peachpuff;
+	transform: scale(1.1);
+}
+
+#countries-page .country a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #000;
+}
+
+#countries-page .country a:hover {
+	text-decoration: underline;
+}
+
+/* Error page */
+#error-page {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}

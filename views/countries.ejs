@@ -1,0 +1,13 @@
+<%- include('partials/head.ejs') %> <%- include('partials/navbar') %>
+<div id="countries-page">
+	<h1>Here is an exaustive list of all countries in the world!</h1>
+	<div id="countries">
+		<% for(let country of countries) { %>
+		<div class="country">
+			<p><a href="/countries/<%= country %>"><%= country %></a></p>
+		</div>
+		<% } %>
+	</div>
+</div>
+
+<%- include('partials/footer') %>
